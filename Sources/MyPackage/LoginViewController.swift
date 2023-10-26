@@ -9,8 +9,8 @@ import UIKit
 
 public class LoginViewController: UIViewController {
 
-    @IBOutlet weak var emailTextField: UITextField!
-    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak public var emailTextField: UITextField!
+    @IBOutlet weak public var passwordTextField: UITextField!
     
     public override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +26,7 @@ public class LoginViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
-    @IBAction func signIn(_ sender: Any) {
+    @IBAction public func signIn(_ sender: Any) {
         print("username \(String(describing: emailTextField.text)) password \(String(describing: passwordTextField.text))")
     }
     
