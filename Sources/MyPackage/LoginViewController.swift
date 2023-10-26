@@ -19,7 +19,7 @@ public class LoginViewController: UIViewController {
     }
 
     public init() {
-        super.init(nibName: "LoginViewController", bundle: Bundle(for: LoginViewController.self))
+        super.init(nibName: "LoginViewController", bundle: nil)
     }
     
     required init?(coder aDecoder: NSCoder) {
