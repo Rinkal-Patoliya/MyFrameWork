@@ -16,11 +16,19 @@ public class LoginViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        let frameworkBundle = Bundle(for: LoginViewController.self)
+        if let nib = frameworkBundle.loadNibNamed("LoginViewController", owner: self, options: nil) {
+            if let loginView = nib.first as? UIView {
+                // Add the loaded view to your project's view hierarchy.
+            }
+        }
+        
     }
 
-    public init() {
-        super.init(nibName: "LoginViewController", bundle: nil)
-    }
+//    public init() {
+//        super.init(nibName: "LoginViewController", bundle: nil)
+//    }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
